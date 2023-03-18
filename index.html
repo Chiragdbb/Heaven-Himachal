@@ -49,7 +49,7 @@
                     </div>
                     <div class="font-medium h-full">
                         <ul class="flex  items-center h-full">
-
+                            <!-- active link color set in js -->
                             <li class="text-green2">
                                 <a href="/" class="py-[38px] px-4">Home</a>
                             </li>
@@ -72,13 +72,568 @@
         </header>
 
         <main>
-            <!-- image scroller -->
-            <div class="h-screen relative z-0">
+            <!-- image slider (js to be added later) -->
+            <section class="min-h-fit w-full relative z-0">
                 <div class="brightness-50">
-                    <img src="/assets/asset-0.jpeg" alt="">
+                    <div class="w-fit"><img class="w-full h-full object-fit" src="/assets/asset-0.jpeg" alt="mountains">
+                    </div>
+                    <div class="hidden"><img src="/assets/asset-1.jpeg" alt="snow-covered-mountains"></div>
+                    <!-- second img is hidden currently -->
                 </div>
-            </div>
 
+                <div class="h-full w-full mx-auto flex items-center absolute top-0 left-0 z-20">
+                    <div class="mx-auto w-full flex flex-col items-center justify-center gap-4 text-white">
+                        <h3 class="uppercase font-semibold text-2xl">Tours & Travel</h3>
+                        <h2 class="font-bold text-7xl mt-2">Live Your Adventure</h2>
+                        <!-- add link to button in js-->
+                        <button class="mt-6 px-12 py-4 bg-green2 hover:bg-hovGreen transition-colors duration-200">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- left button -->
+                <div
+                    class="group h-full w-[250px] flex items-center justify-center absolute left-0 top-0 text-white z-20 hover:cursor-pointer">
+                    <div
+                        class="min-w-10 flex justify-center opacity-40 bg-black2 py-3 px-3 group-hover:opacity-100 hover:bg-[#0f0f0f]">
+                        <svg fill="none" viewBox="0 0 24 24" stroke-width="5" stroke="currentColor"
+                            class="w-6 h-6 opacity-100">
+                            <path d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- right button -->
+                <div
+                    class="group h-full w-[250px] flex items-center justify-center absolute right-0 top-0 text-white z-20 hover:cursor-pointer">
+                    <div
+                        class="min-w-10 flex justify-center opacity-40 bg-black2 py-3 px-3 group-hover:opacity-100 hover:bg-[#0f0f0f]">
+                        <svg fill="none" viewBox="0 0 24 24" stroke-width="5" stroke="currentColor"
+                            class="w-6 h-6 opacity-100 rotate-180">
+                            <path d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="bg-bgColor">
+                <div class="w-[1200px] mx-auto py-24 px-8">
+                    <div class="w-full relative z-0">
+                        <div class="w-[550px] h-[850px] min-h-screen">
+                            <img class="h-full object-cover object-center " src="/assets/asset-2.jpeg" alt="ropeway">
+                        </div>
+                        <div class="w-[660px] h-[80%] absolute left-[40%] top-[10%] z-20 p-12 bg-white">
+                            <h4 class="uppercase text-green2 tracking-[0.3rem] font-medium">About Us</h4>
+                            <h2 class="font-bold text-[40px] leading-tight mt-1 text-black2">We Provide Best Tour
+                                Packages In Your Budget</h2>
+                            <p class="opacity-70 mt-4 leading-relaxed">Watch the beauty of India and the World through a
+                                different lens!
+                                Begin your next adventure now only with Heaven Himachal. Get the finest tour packages
+                                personalized depending on your budget. We offer the most affordable holiday packages to
+                                our customers. The company with its professionally managed travel engine specializes
+                                mainly in organizing Adventure, Cultural, hill station tours you can have a comfortable
+                                and hassle free holiday in India where in you leave all the worries to us</p>
+                            <div class="w-fit flex gap-x-6 mt-2">
+                                <div class="w-[270px]"><img class="object-contain" src="/assets/asset-3.jpeg"
+                                        alt="shimla-church"></div>
+                                <div class="w-[270px]"><img class="object-contain" src="/assets/asset-4.jpeg"
+                                        alt="snow-covered-road"></div>
+                            </div>
+                            <button
+                                class="mt-6 px-4 py-2 bg-green2 hover:bg-hovGreen transition-colors duration-200 text-white">Book
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-4 mt-14">
+                        <div class="flex gap-4">
+                            <div class="p-8 w-[100px] h-[100px] bg-green2 flex items-center justify-center">
+                                <i class="fa-solid fa-money-check-dollar text-white fa-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-black2 font-medium text-xl">Competitive Pricing</h3>
+                                <p class="opacity-70 mt-1">You know you’re priced right when your customers complain—but
+                                    buy
+                                    anyway</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="p-10 w-[100px] h-[100px] bg-green2 flex items-center justify-center">
+                                <i class="fa-solid fa-award text-white fa-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-black2 font-medium text-xl">Best Services</h3>
+                                <p class="opacity-70 mt-1">Quality in a service is not what you put into it. It is what
+                                    the customer gets out of it</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="p-10 w-[100px] h-[100px] bg-green2 flex items-center justify-center">
+                                <i class="fa-solid fa-globe text-white fa-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-black2 font-medium text-xl">Finest Tours</h3>
+                                <p class="opacity-70 mt-1">Our tours leaves people speechless,then turns them into a
+                                    storyteller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Destination -->
+            <!-- add links to cards -->
+            <section class="bg-bgColor py-24">
+                <div class="w-[1200px] mx-auto">
+                    <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Destination</h4>
+                    <h2 class="text-center font-bold text-[40px] leading-tight mt-1 text-black2">Explore Top
+                        Destinations</h2>
+
+                    <div class="grid grid-cols-3 gap-y-8 mt-12 px-10">
+                        <!-- card 1 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-manali bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Kullu-Manali</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-shimla bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Beautiful Shimla</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-dharamshala bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Dharamshala</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-chamba bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Chamba-Dalhousie</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-kinnaur bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Kinnaur</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 6 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-lahaul bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Lahaul-Spiti</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 7 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-goa bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Goa</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 8 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-kashmir bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Kashmir</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                        <!-- card 9 -->
+                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                            <div
+                                class="img-bg w-full h-full bg-himachal bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                            </div>
+                            <div
+                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                <h4 class="font-medium text-xl">Heaven Himachal</h4>
+                                <h5 class="font-medium">Tour</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services  -->
+            <section class="bg-bgColor py-24">
+                <div class="w-[1200px] mx-auto px-12">
+                    <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Services</h4>
+                    <h2 class="text-center font-bold text-[40px] leading-tight mt-1 text-black2">Tours & Travel Services
+                    </h2>
+                    <div class="grid grid-cols-3 gap-x-8 mt-14">
+
+                        <!-- card 1 -->
+                        <div
+                            class="w-[350px] h-[250px] bg-white flex flex-col items-center justify-center gap-2 group hover:shadow-new hover:cursor-pointer transition-shadow duration-500">
+                            <div
+                                class="border-2 border-green2 group-hover:border-white transition-all duration-500 group-hover:bg-green2 ">
+                                <i
+                                    class="fa-solid fa-route fa-2xl text-green2 group-hover:text-white transition-all duration-500 px-[1.25rem] py-[2.25rem]"></i>
+                            </div>
+                            <h3 class="font-medium text-xl mt-4">Travel Guide</h3>
+                            <p class="opacity-70">Professional Guides-Drivers-Us</p>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div
+                            class="w-[350px] h-[250px] bg-white flex flex-col items-center justify-center gap-2 group hover:shadow-new hover:cursor-pointer transition-shadow duration-500">
+                            <div
+                                class="border-2 border-green2 group-hover:border-white transition-all duration-500 group-hover:bg-green2 ">
+                                <i
+                                    class="fa-solid fa-ticket fa-2xl text-green2 group-hover:text-white transition-all duration-500 px-[1.25rem] py-[2.25rem]"></i>
+                            </div>
+                            <h3 class="font-medium text-xl mt-4">Ticket Booking</h3>
+                            <p class="opacity-70">Train-Bus-Taxi</p>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div
+                            class="w-[350px] h-[250px] bg-white flex flex-col items-center justify-center gap-2 group hover:shadow-new hover:cursor-pointer transition-shadow duration-500">
+                            <div
+                                class="border-2 border-green2 group-hover:border-white transition-all duration-500 group-hover:bg-green2 ">
+                                <i
+                                    class="fa-solid fa-hotel fa-2xl text-green2 group-hover:text-white transition-all duration-500 px-[1.25rem] py-[2.25rem]"></i>
+                            </div>
+                            <h3 class="font-medium text-xl mt-4">Hotel Booking</h3>
+                            <p class="opacity-70">Hotel-Tents-Resorts</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Packages -->
+            <section class="bg-bgColor py-24">
+                <div class="w-[1200px] mx-auto px-12">
+                    <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Packages</h4>
+                    <h2 class="text-center font-bold text-[40px] leading-tight mt-1 text-black2">Perfect Tour Packages
+                    </h2>
+                    <div class="grid grid-cols-3 gap-x-8 mt-14">
+
+                        <!-- card 1 -->
+                        <div
+                            class="w-[350px] h-[450px] bg-white text-green2 hover:shadow-2xl hover:cursor-pointer transition-shadow duration-200">
+                            <div>
+                                <img src="/assets/asset-14.jpeg" alt="a-couple-watching-hills">
+                            </div>
+
+                            <div class="flex flex-col gap-y-4 p-6 pt-[1.25rem]">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-location-dot fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">Manali</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-calendar-days fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">3N 4D</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">2 Person</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-black2 font-medium text-xl leading-tight hover:text-[#527a20]"><a
+                                        href="/">
+                                        Beautiful Kullu-Manali Honeymoon Package
+                                    </a></h3>
+                                <div class="w-full self-center mt-2 h-[0.5px] bg-black bg-opacity-10"></div>
+                                <div class="flex justify-between mt-2">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="text-black2 font-medium ml-1">5/5</span>
+                                    </div>
+                                    <div class="font-medium text-xl text-black2">Book Now</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div
+                            class="w-[350px] h-[450px] bg-white text-green2 hover:shadow-2xl hover:cursor-pointer transition-shadow duration-200">
+                            <div>
+                                <img src="/assets/asset-15.jpeg" alt="shimla-hills">
+                            </div>
+
+                            <div class="flex flex-col gap-y-4 p-6 pt-[1.25rem]">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-location-dot fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">Shimla-Manali</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-calendar-days fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">5N 6D</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">2 Person</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-black2 font-medium text-xl leading-tight hover:text-[#527a20]"><a
+                                        href="/">
+                                        Exclusive Shimla-Manali Honeymoon Package
+                                    </a></h3>
+                                <div class="w-full self-center mt-2 h-[0.5px] bg-black bg-opacity-10"></div>
+                                <div class="flex justify-between mt-2">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="text-black2 font-medium ml-1">5/5</span>
+                                    </div>
+                                    <div class="font-medium text-xl text-black2">Book Now</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div
+                            class="w-[350px] h-[450px] bg-white text-green2 hover:shadow-2xl hover:cursor-pointer transition-shadow duration-200">
+                            <div>
+                                <img src="/assets/asset-16.jpeg" alt="goa">
+                            </div>
+
+                            <div class="flex flex-col gap-y-4 p-6 pt-[1.25rem]">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-location-dot fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">Goa</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-calendar-days fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">6N 7D</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">No Limit</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-black2 font-medium text-xl leading-tight hover:text-[#527a20]"><a
+                                        href="/">
+                                        Discover Amazing Goa with Heaven Himachal
+                                    </a></h3>
+                                <div class="w-full self-center mt-2 h-[0.5px] bg-black bg-opacity-10"></div>
+                                <div class="flex justify-between mt-2">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="text-black2 font-medium ml-1">5/5</span>
+                                    </div>
+                                    <div class="font-medium text-xl text-black2">Book Now</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 4 -->
+                        <div
+                            class="w-[350px] h-[450px] bg-white text-green2 hover:shadow-2xl hover:cursor-pointer transition-shadow duration-200">
+                            <div>
+                                <img src="/assets/asset-17.jpeg" alt="Himachal-hills">
+                            </div>
+
+                            <div class="flex flex-col gap-y-4 p-6 pt-[1.25rem]">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-location-dot fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">Himachal</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-calendar-days fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">8N 9D</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">No Limit</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-black2 font-medium text-xl leading-tight hover:text-[#527a20]"><a
+                                        href="/">
+                                        Explore Heaven Himachal with Heaven Himachal
+                                    </a></h3>
+                                <div class="w-full self-center mt-2 h-[0.5px] bg-black bg-opacity-10"></div>
+                                <div class="flex justify-between mt-2">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="text-black2 font-medium ml-1">5/5</span>
+                                    </div>
+                                    <div class="font-medium text-xl text-black2">Book Now</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 5 -->
+                        <div
+                            class="w-[350px] h-[450px] bg-white text-green2 hover:shadow-2xl hover:cursor-pointer transition-shadow duration-200">
+                            <div>
+                                <img src="/assets/asset-18.jpeg" alt="Kashmir">
+                            </div>
+
+                            <div class="flex flex-col gap-y-4 p-6 pt-[1.25rem]">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-location-dot fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">Kashmir</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-calendar-days fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">5N 6D</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">
+                                            No Limit</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-black2 font-medium text-xl leading-tight hover:text-[#527a20]"><a
+                                        href="/">
+                                        The word "Chalo Kashmir" is enough
+                                    </a></h3>
+                                <div class="w-full self-center mt-2 h-[0.5px] bg-black bg-opacity-10"></div>
+                                <div class="flex justify-between mt-2">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="text-black2 font-medium ml-1">5/5</span>
+                                    </div>
+                                    <div class="font-medium text-xl text-black2">Book Now</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 6 -->
+                        <div
+                            class="w-[350px] h-[450px] bg-white text-green2 hover:shadow-2xl hover:cursor-pointer transition-shadow duration-200">
+                            <div>
+                                <img src="/assets/asset-19.jpeg" alt="Dharamshala">
+                            </div>
+
+                            <div class="flex flex-col gap-y-4 p-6 pt-[1.25rem]">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-location-dot fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">Dharamshala</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-calendar-days fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">3N 4D</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span class="text-black2 text-[0.8rem] opacity-80 ml-1">No Limit</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-black2 font-medium text-xl leading-tight hover:text-[#527a20]"><a
+                                        href="/">
+                                        Amazing views of Dhauladhar Range with beautiful city
+                                    </a></h3>
+                                <div class="w-full self-center mt-2 h-[0.5px] bg-black bg-opacity-10"></div>
+                                <div class="flex justify-between mt-2">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="text-black2 font-medium ml-1">5/5</span>
+                                    </div>
+                                    <div class="font-medium text-xl text-black2">Book Now</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Special offer  -->
+            <section class="bg-bgColor py-24">
+                <div class="w-full h-[500px] bg-offer-bg bg-top bg-cover ">
+                    <div
+                        class="w-full h-full mt-10 px-[13rem] bg-black bg-opacity-50 text-white flex items-center gap-x-8">
+                        <div class="flex flex-col">
+                            <h4 class="uppercase text-green2 tracking-[0.3rem] font-medium">Special offer</h4>
+                            <h2 class="text-[40px] font-bold"><span class="text-green2">20% OFF </span>For Honeymoon
+                            </h2>
+                            <p class="mt-4">Go to a place where you're not going to be stressed, because a honeymoon
+                                itself can be a stressful thing and A husband may forget where he went on his honeymoon,
+                                but he never forgets why.</p>
+                            <ul class="space-y-4 mt-4">
+                                <li>
+                                    <svg class="w-6 h-6 text-green2 inline-block mr-2" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="3" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.5 12.75l6 6 9-13.5" />
+                                    </svg>
+                                    Romantic Suites
+                                </li>
+                                <li>
+                                    <svg class="w-6 h-6 text-green2 inline-block mr-2" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="3" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.5 12.75l6 6 9-13.5" />
+                                    </svg>
+                                    Premium Quality Service
+                                </li>
+                                <li>
+                                    <svg class="w-6 h-6 text-green2 inline-block mr-2" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="3" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.5 12.75l6 6 9-13.5" />
+                                    </svg>
+                                    Affordable Pricing
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="">
+                            <a href="./contact.html">
+                                <div
+                                    class="w-[27.5rem] h-[7rem] bg-green2 font-bold text-[40px] text-center pt-[1.75rem] uppercase">
+                                    Book Now</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Team -->
+            <section class="bg-bgColor py-24">
+                <div class="w-[1200px] mx-auto px-12">
+                    <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Out Team</h4>
+                    <h2 class="text-center font-bold text-[40px] leading-tight mt-2 text-black2">It takes two flints to make a FIRE</h2>
+                    <div class="grid grid-cols-2">
+
+                    </div>
+                </div>
+            </section>
         </main>
 
     </div>
