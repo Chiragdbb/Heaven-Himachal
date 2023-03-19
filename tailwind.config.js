@@ -10,6 +10,7 @@ module.exports = {
         green2: "#7ab730",
         hovGreen:"#669928",
         gray2: "#656565",
+        ftGray: "#909090",
         black2: "#212121",
         bgColor: "#f3f3f3",
       },
@@ -27,6 +28,8 @@ module.exports = {
         'kashmir': "url('/assets/asset-12.jpeg')",
         'himachal': "url('/assets/asset-13.jpeg')",
         'offer-bg': "url('/assets/asset-0.jpeg')",
+        'sakshi': "url('/assets/asset-20.jpeg')",
+        'anshul': "url('/assets/asset-21.jpeg')",
       }
     },
   },
