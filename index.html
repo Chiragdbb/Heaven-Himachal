@@ -1,11 +1,8 @@
-    <!-- add GO TO TOP button -->
-    <!-- <i class="fa-solid fa-chevrons-up"></i> -->
-
-    <!-- slider is not done -->
-    <!-- add links to starting buttons -->
-    <!-- add media queries -->
-    <!-- make other pages -->
-    <!-- add google forms -->
+<!-- add js to SCROLL TO TOP button -->
+<!-- slider is not done -->
+<!-- add links to starting buttons -->
+<!-- add media queries -->
+<!-- navbar link color change when active -->
 
 
 <!DOCTYPE html>
@@ -25,11 +22,11 @@
     <div id="wrapper" class="font-Poppins">
 
         <!-- Header -->
-        <header class="h-24 pt-4 relative">
+        <header class="h-[98px] pt-4 relative">
 
-            <div class="w-[1200px] mx-auto flex justify-between px-10 text-gray2">
+            <div class="max-w-[1200px] mx-auto flex justify-between pl-12 pr-10 text-gray2">
                 <div>
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope ml-1"></i>
                     <span class="ml-1">info@heavenhimachal.com</span>
                     <span class="mx-3">|</span>
                     <i class="fa-solid fa-phone"></i>
@@ -37,45 +34,48 @@
                 </div>
                 <div class="text-green2 flex items-center">
 
-                    <a href="https://www.facebook.com" class="px-4 hover:brightness-75">
+                    <a href="https://www.facebook.com/profile.php?id=100087400896465" class="px-4 hover:brightness-75">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com" class="px-4 hover:brightness-75">
+                    <a href="https://instagram.com/heaven_himachal_tourntravel?igshid=NDRkN2NkYzU=" class="px-4 hover:brightness-75">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com" class="px-4 hover:brightness-75">
+                    <a href="https://youtube.com/channel/UC-dxwchZqVQHNTPeg6DYn-A" class="pl-4 pr-2.5 hover:brightness-75">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
             </div>
 
             <!-- navbar -->
-            <nav class="w-[1200px] mx-auto h-20 pl-10 pr-14 absolute left-[10.5rem] -bottom-10 z-10">
-                <div class="h-full flex justify-between items-center pl-12 pr-8 shadow-new bg-white">
-                    <div class="uppercase font-bold text-3xl">
-                        <a href="/">
-                            <h2 class="">Heaven<span class="text-green2">Himachal</span></h2>
-                        </a>
-                    </div>
-                    <div class="font-medium h-full">
-                        <ul class="flex  items-center h-full">
-                            <!-- active link color set in js -->
-                            <li class="text-green2">
-                                <a href="/" class="py-[38px] px-4">Home</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="/" class="py-[38px] px-4">About</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="/" class="py-[38px] px-4">Services</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="/" class="py-[38px] px-4">Tour Packages</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="/" class="py-[38px] px-4">Contact</a>
-                            </li>
-                        </ul>
+            <nav class="w-full h-[5.25rem]  absolute -bottom-[42px] z-10">
+                <!-- pl-10 pr-14 -->
+                <div class="max-w-[1200px] h-full mx-auto px-12">
+                    <div class="h-full w-full flex justify-between items-center pr-10 pl-14 bg-white shadow-new">
+                        <div class="uppercase font-bold text-3xl">
+                            <a href="index.html">
+                                <h2 class="">Heaven<span class="text-green2">Himachal</span></h2>
+                            </a>
+                        </div>
+                        <div class="font-medium h-full">
+                            <ul class="flex  items-center h-full">
+                                <!-- active link color set in js -->
+                                <li class="text-green2">
+                                    <a href="index.html" class="py-[38px] px-4">Home</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="about.html" class="py-[38px] px-4">About</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="service.html" class="py-[38px] px-4">Services</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="package.html" class="py-[38px] px-4">Tour Packages</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="contact.html" class="py-[38px] px-4">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -128,7 +128,7 @@
 
             <!-- About -->
             <section class="bg-bgColor">
-                <div class="w-[1200px] mx-auto py-24 px-8">
+                <div class="max-w-[1200px] mx-auto py-24 px-8">
                     <div class="w-full relative z-0">
                         <div class="w-[550px] h-[850px] min-h-screen">
                             <img class="h-full object-cover object-center " src="/assets/asset-2.jpeg" alt="ropeway">
@@ -192,9 +192,8 @@
             </section>
 
             <!-- Destination -->
-            <!-- add links to cards -->
             <section class="bg-bgColor py-24">
-                <div class="w-[1200px] mx-auto">
+                <div class="max-w-[1200px] mx-auto">
                     <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Destination</h4>
                     <h2 class="text-center font-bold text-[40px] leading-tight mt-1 text-black2">Explore Top
                         Destinations</h2>
@@ -202,102 +201,120 @@
                     <div class="grid grid-cols-3 gap-y-8 mt-12 px-10">
                         <!-- card 1 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-manali bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Kullu-Manali</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-manali bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Kullu-Manali</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 2 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-shimla bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Beautiful Shimla</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-shimla bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Beautiful Shimla</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 3 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-dharamshala bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Dharamshala</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-dharamshala bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Dharamshala</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 4 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-chamba bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Chamba-Dalhousie</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-chamba bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Chamba-Dalhousie</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 5 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-kinnaur bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Kinnaur</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-kinnaur bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Kinnaur</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 6 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-lahaul bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Lahaul-Spiti</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-lahaul bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Lahaul-Spiti</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 7 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-goa bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Goa</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-goa bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Goa</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 8 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-kashmir bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Kashmir</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-kashmir bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Kashmir</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>
                         </div>
                         <!-- card 9 -->
                         <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
-                            <div
-                                class="img-bg w-full h-full bg-himachal bg-center bg-cover group-hover:scale-125 transition-all duration-500">
-                            </div>
-                            <div
-                                class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
-                                <h4 class="font-medium text-xl">Heaven Himachal</h4>
-                                <h5 class="font-medium">Tour</h5>
-                            </div>
+                            <a href="https://www.heavenhimachal.com/">
+                                <div
+                                    class="img-bg w-full h-full bg-himachal bg-center bg-cover group-hover:scale-125 transition-all duration-500">
+                                </div>
+                                <div
+                                    class="box-content w-[290px] h-[150px] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-3 items-center justify-center bg-black bg-opacity-30 text-white border border-white border-opacity-50 group-hover:border-x-[31px] group-hover:border-y-[31px] group-hover:border-opacity-70 transition-all duration-200 ease-linear">
+                                    <h4 class="font-medium text-xl">Heaven Himachal</h4>
+                                    <h5 class="font-medium">Tour</h5>
+                                </div>
+                            </a>https://www.heavenhimachal.com/
                         </div>
                     </div>
                 </div>
@@ -305,7 +322,7 @@
 
             <!-- Services  -->
             <section class="bg-bgColor py-24">
-                <div class="w-[1200px] mx-auto px-12">
+                <div class="max-w-[1200px] mx-auto px-12">
                     <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Services</h4>
                     <h2 class="text-center font-bold text-[40px] leading-tight mt-1 text-black2">Tours & Travel Services
                     </h2>
@@ -353,7 +370,7 @@
 
             <!-- Packages -->
             <section class="bg-bgColor py-24">
-                <div class="w-[1200px] mx-auto px-12">
+                <div class="max-w-[1200px] mx-auto px-12">
                     <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Packages</h4>
                     <h2 class="text-center font-bold text-[40px] leading-tight mt-1 text-black2">Perfect Tour Packages
                     </h2>
@@ -637,7 +654,7 @@
 
             <!-- Our Team -->
             <section class="bg-bgColor py-24">
-                <div class="w-[1200px] mx-auto px-12">
+                <div class="max-w-[1200px] mx-auto px-12">
                     <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Out Team</h4>
                     <h2 class="text-center font-bold text-[40px] leading-tight mt-2 text-black2">It takes two flints to
                         make a FIRE</h2>
@@ -713,7 +730,7 @@
 
             <!-- Youtube Vlogs -->
             <section class="bg-bgColor py-24">
-                <div class="w-[1200px] mx-auto px-12">
+                <div class="max-w-[1200px] mx-auto px-12">
                     <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Youtube</h4>
                     <h2 class="text-center font-bold text-[40px] leading-tight mt-2 text-black2">Latest From Our Vlogs
                     </h2>
@@ -897,7 +914,13 @@
             <div class="h-[0.5px] bg-white brightness-[20%]"></div>
             <div class="px-12 py-6 bg-black2">Copyright &copy; 2023 Heaven Himachal All Rights Reserved.</div>
         </footer>
+
+        <!-- scroll to top -->
+        <button id="scrollTopBtn" onclick="topFunction()" class="w-12 h-12 fixed z-[200] bottom-12 right-12 flex justify-center items-center bg-green2 text-white">
+              <i class="fa fa-angle-double-up fa-lg"></i>
+        </button>
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
