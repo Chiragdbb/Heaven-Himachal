@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heaven Himachal | Clone</title>
     <link rel="stylesheet" href="main.css">
+    <script defer src="main.js"></script>
     <script src="https://kit.fontawesome.com/746a2c35f6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,12 +15,12 @@
     <!-- wrapper -->
     <div id="wrapper" class="font-Poppins">
 
-        <!-- Header -->
-        <header class="h-[98px] pt-4 relative">
+        <!-- Large screen Header -->
+        <header class="h-[98px] pt-4 lg:relative hidden lg:block">
 
-            <div class="w-[1200px] mx-auto flex justify-between px-10 text-gray2">
+            <div class="max-w-[1200px] mx-auto flex justify-between pl-12 pr-10 text-gray2">
                 <div>
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope ml-1"></i>
                     <span class="ml-1">info@heavenhimachal.com</span>
                     <span class="mx-3">|</span>
                     <i class="fa-solid fa-phone"></i>
@@ -34,74 +35,119 @@
                         class="px-4 hover:brightness-75">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://youtube.com/channel/UC-dxwchZqVQHNTPeg6DYn-A" class="px-4 hover:brightness-75">
+                    <a href="https://youtube.com/channel/UC-dxwchZqVQHNTPeg6DYn-A"
+                        class="pl-4 pr-2.5 hover:brightness-75">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
             </div>
 
             <!-- navbar -->
-            <nav class="w-[1200px] mx-auto h-[5.25rem] pl-10 pr-14 absolute left-[10.5rem] -bottom-[42px] z-10">
-                <div class="h-full flex justify-between items-center pl-12 pr-8 shadow-new bg-white">
-                    <div class="uppercase font-bold text-3xl">
-                        <a href="index.html">
-                            <h2 class="">Heaven<span class="text-green2">Himachal</span></h2>
-                        </a>
+            <nav class="w-full h-[5.25rem] absolute -bottom-[42px] z-10">
+                <div class="max-w-[1200px] h-full mx-auto px-12">
+                    <div class="h-full w-full flex justify-between items-center pr-10 pl-14 bg-white shadow-new">
+                        <div class="uppercase font-bold text-3xl">
+                            <a href="index.html">
+                                <h2 class="">Heaven<span class="text-green2">Himachal</span></h2>
+                            </a>
+                        </div>
+                        <div class="font-medium h-full">
+                            <ul class="flex items-center h-full">
+                                <li class="hover:text-green2">
+                                    <a href="index.html" class="nav-link py-[31px] px-4">Home</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="about.html" class="nav-link py-[31px] px-4">About</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="service.html" class="nav-link py-[31px] px-4">Services</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="package.html" class="nav-link py-[31px] px-4">Tour Packages</a>
+                                </li>
+                                <li class="hover:text-green2">
+                                    <a href="contact.html" class="nav-link py-[31px] px-4">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="font-medium h-full">
-                        <ul class="flex  items-center h-full">
-                            <!-- active link color set in js -->
-                            <li class="">
-                                <a href="index.html" class="py-[38px] px-4">Home</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="about.html" class="py-[38px] px-4">About</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="service.html" class="py-[38px] px-4">Services</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="package.html" class="py-[38px] px-4">Tour Packages</a>
-                            </li>
-                            <li class="hover:text-green2">
-                                <a href="contact.html" class="py-[38px] px-4">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Small screen header -->
+        <header class="min-h-[78px] block lg:hidden">
+            <div class="w-full flex items-center justify-between lg:hidden p-4">
+                <div class="uppercase font-bold text-3xl">
+                    <a href="index.html">
+                        <h2 class="">Heaven<span class="text-green2">Himachal</span></h2>
+                    </a>
+                </div>
+                <div>
+                    <!-- hamburger-button -->
+                    <button id="ham-btn" class="border-2 rounded-sm border-black border-opacity-5">
+                        <div class="py-1 px-3">
+                            <img class="object-cover object-center" src="assets/asset-22.svg" alt="hamburger-menu">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- Small screen hamburger-navbar -->
+            <nav id="ham-nav" class="transition-all duration-300 h-0">
+                <div class="font-medium h-full px-8 pb-3">
+                    <ul class="flex flex-col h-full">
+                        <li class="hover:text-green2 h-fit py-3 pl-4">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="hover:text-green2 h-fit py-3 pl-4">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="hover:text-green2 h-fit py-3 pl-4">
+                            <a href="service.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="hover:text-green2 h-fit py-3 pl-4">
+                            <a href="package.html" class="nav-link">Tour Packages</a>
+                        </li>
+                        <li class="hover:text-green2 h-fit py-3 pl-4">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
         <!-- main -->
         <main>
-            <section class="w-full relative z-0">
-                <div class="brightness-50 ">
-                    <div class="w-full h-[400px] overflow-hidden">
-                        <img class="" src="/assets/asset-1.jpeg" alt="snow-covered-mountains">
+            <!-- Page info -->
+            <section class="w-full h-[400px] relative z-0">
+                <div class="h-full brightness-50">
+                    <div class="w-full h-full overflow-hidden">
+                        <img class="object-cover object-center w-full h-full" src="/assets/asset-1.jpeg" alt="snow-covered-mountains">
                     </div>
                 </div>
-
-                <div class="h-full w-full mx-auto flex items-center absolute top-0 left-0 z-20">
+                <div class="h-full w-full flex items-center justify-center absolute top-0 left-0 z-20">
                     <div class="mx-auto w-full flex flex-col items-center justify-center text-white">
-                        <h2 class="font-semibold text-[56px] uppercase">Packages</h2>
+                        <h2 class="font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-[56px] uppercase">Tour Packages</h2>
                         <div class="uppercase text flex gap-x-4">
                             <span class="hover:underline"><a href="index.html">Home</a></span>
                             <div><i class="fa fa-angle-double-up fa-sm rotate-90 inline-block"></i></div>
-                            <span>Packages</span>
+                            <span>Tour Packages</span>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Destination -->
             <section class="bg-bgColor py-24">
-                <div class="w-[1200px] mx-auto">
+                <div class="max-w-[1200px] mx-auto">
                     <h4 class="text-center uppercase text-green2 tracking-[0.3rem] font-medium">Destination</h4>
                     <h2 class="text-center font-bold text-[40px] leading-tight mt-1 text-black2">Explore Top
                         Destinations</h2>
 
-                    <div class="grid grid-cols-3 gap-y-8 mt-12 px-10">
+                    <div
+                        class="w-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 lg:gap-y-4 lg:gap-x-4 xl:gap-y-8 xl:gap-x-8 mt-12 px-2 min-[1200px]:px-10 mx-auto place-items-center">
                         <!-- card 1 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-manali bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -114,7 +160,8 @@
                             </a>
                         </div>
                         <!-- card 2 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-shimla bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -127,7 +174,8 @@
                             </a>
                         </div>
                         <!-- card 3 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-dharamshala bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -140,7 +188,8 @@
                             </a>
                         </div>
                         <!-- card 4 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-chamba bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -153,7 +202,8 @@
                             </a>
                         </div>
                         <!-- card 5 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-kinnaur bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -166,7 +216,8 @@
                             </a>
                         </div>
                         <!-- card 6 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-lahaul bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -179,7 +230,8 @@
                             </a>
                         </div>
                         <!-- card 7 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-goa bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -192,7 +244,8 @@
                             </a>
                         </div>
                         <!-- card 8 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-kashmir bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -205,7 +258,8 @@
                             </a>
                         </div>
                         <!-- card 9 -->
-                        <div class="w-[350px] h-[210px] hover:cursor-pointer group overflow-hidden relative">
+                        <div
+                            class="w-[350px] h-[210px] lg:scale-90 xl:scale-100 hover:cursor-pointer md:col-span-2 lg:col-span-1 group overflow-hidden relative">
                             <a href="https://www.heavenhimachal.com/">
                                 <div
                                     class="img-bg w-full h-full bg-himachal bg-center bg-cover group-hover:scale-125 transition-all duration-500">
@@ -221,9 +275,11 @@
                 </div>
             </section>
         </main>
-        <footer class="bg-bgColor text-ftGray font-medium pt-10">
-            <section class="py-24 px-12 bg-black2 flex gap-x-8">
-                <div class="w-[23%]">
+
+        <!-- footer -->
+        <footer class="bg-bgColor text-ftGray font-medium pt-16">
+            <section class="w-full py-24 px-6 sm:px-12 bg-black2 flex flex-wrap lg:flex-nowrap gap-y-8">
+                <div class="w-full sm:w-[300px] m-0 md:mr-8">
                     <h2 class="uppercase text-white font-bold text-3xl">heaven<span class="text-green2">himachal</span>
                     </h2>
                     <p class="mt-4">Heaven Himachal is an experienced Travel Management Company of Himachal Pradesh. We
@@ -248,7 +304,7 @@
                         </a>
                     </div>
                 </div>
-                <div>
+                <div class="mr-6">
                     <h3 class="uppercase text-white tracking-[0.3rem] text-xl">Useful option</h3>
                     <ul class="flex flex-col gap-y-2 justify-center mt-6">
                         <li class="hover:underline hover:cursor-pointer">
@@ -284,7 +340,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="ml-6">
+                <div class="">
                     <h3 class="uppercase text-white tracking-[0.3rem] text-xl">Contact Us</h3>
                     <ul class="mt-6 flex flex-col gap-y-4">
                         <li>
@@ -303,15 +359,15 @@
                 </div>
             </section>
             <div class="h-[0.5px] bg-white brightness-[20%]"></div>
-            <div class="px-12 py-6 bg-black2">Copyright &copy; 2023 Heaven Himachal All Rights Reserved.</div>
+            <div class="pl-4 pr-24 sm:px-12 py-6 bg-black2 text-left sm:text-center lg:text-left">Copyright &copy; 2023 Heaven Himachal All Rights Reserved.</div>
         </footer>
 
-        <!-- scroll to top (not complete) -->
-        <button id="scrollTopBtn" onclick="topFunction()" class="w-12 h-12 fixed z-[200] bottom-12 right-12 flex justify-center items-center bg-green2 text-white">
+        <!-- scroll to top -->
+        <button id="scrollTopBtn" onclick="topFunction()"
+            class="w-12 h-12 fixed z-[200] bottom-6 right-6 sm:bottom-12 sm:right-12 flex justify-center items-center bg-green2 text-white">
             <i class="fa fa-angle-double-up fa-lg"></i>
-      </button>
+        </button>
     </div>
-    <script src="./main.js"></script>
 </body>
 
 </html>

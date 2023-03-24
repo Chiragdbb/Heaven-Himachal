@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active-link {
+    color: #7ab730;
+}
+
+.data-active{
+    opacity: 1;
+}
