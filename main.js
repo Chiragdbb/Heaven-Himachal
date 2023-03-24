@@ -26,22 +26,27 @@ hamBtn.addEventListener("click", function () {
 
 // Scroll to top button
 
-let btnToTop = document.getElementById("scrollTopbtnToTop");
-
-window.onscroll = function () {
-  if (window.scrollY > 20) {
-    btnToTop.style.display = "block";
-  } else {
-    btnToTop.style.display = "none";
-  }
+let scrollTopBtn = document.querySelector("#scrollTop");
+const scrollContainer = () => {
+  return document.documentElement || document.body;
 };
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+scrollTopBtn.addEventListener("click", () => {
+  document.documentElement.scrollIntoView({
+    behavior:"smooth",
+  });
+  
+});
 
-// Carousel
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > 100) {
+    scrollTopBtn.style.opacity = "100%";
+  } else {
+    scrollTopBtn.style.opacity = "0%";
+  }
+});
+
+// Image Carousel
 
 // const buttons = document.querySelectorAll("[data-carousel-button]");
 
