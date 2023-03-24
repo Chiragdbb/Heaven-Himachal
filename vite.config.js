@@ -3,7 +3,7 @@ export default ({
       rollupOptions: {
         input: {
             base: './index.html',
-            main2: './main.js',
+            main: './main.js',
             contact: './contact.html',
             package: './package.html',
             service: './service.html',
