@@ -2,7 +2,7 @@ export default ({
     build: {
       rollupOptions: {
         input: {
-            base: './index.html',
+            index: './index.html',
             main: './main.js',
             contact: './contact.html',
             package: './package.html',
