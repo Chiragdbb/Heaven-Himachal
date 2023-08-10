@@ -13,6 +13,7 @@ allNavLinks.forEach((link) => {
 });
 
 // Hamburger menu
+
 let hamBtn = document.getElementById("ham-btn");
 let hamNav = document.getElementById("ham-nav");
 
@@ -35,7 +36,8 @@ scrollTopBtn.addEventListener("click", () => {
 	document.documentElement.scrollIntoView({
 		behavior: "smooth",
 	});
-	scrollTopBtn.animate;
+	// add animation and control speed of scroll
+	// scrollTopBtn.animate;
 });
 
 document.addEventListener("scroll", () => {
